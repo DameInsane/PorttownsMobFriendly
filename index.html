@@ -1,0 +1,250 @@
+ <!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta id="view" name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1" />
+		<title>Port Towns & Urban Cultures</title>
+		<link rel="stylesheet" type="text/css" href="css/screen_style.css" />
+		<link rel="stylesheet" type="text/css" href="css/screen_layout_large.css" />
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:50px) and (max-width:500px)"   href="css/screen_layout_small.css">
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:501px) and (max-width:800px)"  href="css/screen_layout_medium.css">
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="page">
+			<header>
+				<a class="logo" href="#"></a>
+				<div class="social_media_icons">
+					<a target="_blank" href="https://www.facebook.com/PortTownsAndUrbanCultures">
+						<img width="66" border="0" height="57" src="http://porttowns.port.ac.uk/wp-content/uploads/graphics_facebook_icon.png" 									alt="" onmouseout="this.src='http://porttowns.port.ac.uk/wp-content/uploads/graphics_facebook_icon.png'" 									onmouseover="this.src='http://porttowns.port.ac.uk/wp-content/uploads/graphics_facebook_icon_over.png'">
+					</a>
+					<a target="_blank" href="https://twitter.com/PortPTUC">
+						<img width="58" border="0" height="57" src="http://porttowns.port.ac.uk/wp-content/uploads/														graphics_twitter_icon.png"alt=""onmouseout="this.src='http://porttowns.port.ac.uk/wp-content/uploads/										graphics_twitter_icon.png'"onmouseover="this.src='http://porttowns.port.ac.uk/wp-content/uploads/											graphics_twitter_icon_over.png'">
+					</a>
+				</div>
+				
+				
+				
+			</header>
+
+			<article>
+				<!--
+<h1>Heading</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a href="#">Duis aute irure</a> dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				
+								</p>
+-->	
+				<!--
+<div id="map-canvas">
+
+				</div>
+
+-->
+<div id='location-canvas' style='width:100%;height:450px;'></div>
+
+			</article>
+
+			<div class="promo_container">
+				
+				<div class="promo one">
+					<div class="content">
+						<h3>Promo Heading Here</h3>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p><a class="cta" href="">Visit our blog</a></p>
+					</div>
+				</div>
+				
+				<div class="promo two">
+					<div class="content">
+						<h3>Promo Heading Here</h3>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+						<p><a class="cta" href="">Read the article</a></p>
+					</div>
+				</div>
+				
+				<div class="promo three">
+					<div class="content">
+						<h3>Promo Heading Here</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor inci did unt.</p>
+						<p><a class="cta" href="">Learn more</a></p>
+					</div>
+				</div>
+				
+				<div class="promo three">
+					<div class="content">
+						<h3>Promo Heading Here</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor inci did unt.</p>
+						<p><a class="cta" href="">Learn more</a></p>
+					</div>
+				</div>
+				
+				
+				
+				<div class="clear-fix"></div>
+			</div>
+			
+			<!--
+<div class="promo_container">
+				
+				<div class="promo one">
+					<div class="content">
+						<h3>Promo Heading Here</h3>
+						<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p><a class="cta" href="">Visit our blog</a></p>
+					</div>
+				</div>
+				
+				<div class="promo two">
+					<div class="content">
+						<h3>Promo Heading Here</h3>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit est laborum.</p>
+						<p><a class="cta" href="">Read the article</a></p>
+					</div>
+				</div>
+				
+				<div class="promo three">
+					<div class="content">
+						<h3>Promo Heading Here</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor inci did unt.</p>
+						<p><a class="cta" href="">Learn more</a></p>
+					</div>
+				</div>
+				
+				
+				
+				<div class="clear-fix"></div>
+			</div>
+-->
+			
+			<nav>
+				<a href="#">About Us</a>
+				<a href="#">Services</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Contact Us</a>
+			</nav>
+			<footer>
+				&copy; Port Towns & Urban Cultures
+			</footer>
+		</div>
+		
+<script>
+
+function initialize() {
+    var mapOptions = {
+        zoom: 9,
+        center: new google.maps.LatLng(50.790431, -1.087748),
+        mapTypeId: google.maps.MapTypeId.TERRAIN
+     };
+ 
+     var map = new google.maps.Map(document.getElementById('location-canvas'),
+mapOptions);
+ 
+    var marker = new google.maps.Marker({
+        map: map,
+        draggable: false,
+        position: new google.maps.LatLng(50.790431, -1.087748)
+    });
+}
+ 
+google.maps.event.addDomListener(window, 'resize', initialize);
+google.maps.event.addDomListener(window, 'load', initialize)
+
+</script>	
+		
+		
+<!--
+<script>
+		
+// This example displays a marker at the center of Australia.
+// When the user clicks the marker, an info window opens.
+
+function initialize() {
+  var myLatlng = new google.maps.LatLng(50.8166, -1.0833);
+  var mapOptions = {
+    zoom: 4,
+    center: myLatlng
+  };
+
+  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Portsmouth</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Portsmouth</b>,' +
+      'Heritage Site.</p>'+
+      '<p>Attribution: Portsmouth, <a href="https://en.wikipedia.org/wiki/Portsmouth">'+
+      'https://en.wikipedia.org/w/index.php?title=Portsmouth</a> '+
+      '(last visited June 22, 2009).</p>'+
+      '</div>'+
+      '</div>';
+
+  var infowindow = new google.maps.InfoWindow({
+      content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Portsmouth (Ayers Rock)'
+  });
+  google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+  });
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+<script src="js/classie.js"></script>
+		<script>
+			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+				showLeftPush = document.getElementById( 'showLeftPush' ),
+				body = document.body;
+
+// need this!!!!!
+			showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+// Need this ^^
+
+// may need this (to look cooler \/)
+
+			function disableOther( button ) {
+				if( button !== 'showLeft' ) {
+					classie.toggle( showLeft, 'disabled' );
+				}
+				if( button !== 'showRight' ) {
+					classie.toggle( showRight, 'disabled' );
+				}
+				if( button !== 'showTop' ) {
+					classie.toggle( showTop, 'disabled' );
+				}
+				if( button !== 'showBottom' ) {
+					classie.toggle( showBottom, 'disabled' );
+				}
+				if( button !== 'showLeftPush' ) {
+					classie.toggle( showLeftPush, 'disabled' );
+				}
+				if( button !== 'showRightPush' ) {
+					classie.toggle( showRightPush, 'disabled' );
+				}
+			}
+		</script>
+
+-->
+
+	</body>
+</html>
